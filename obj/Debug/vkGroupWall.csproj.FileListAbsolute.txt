@@ -1,0 +1,51 @@
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe.config
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.pdb
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Form1.resources
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Properties.Resources.resources
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.exe
+c:\users\stas\documents\visual studio 2012\Projects\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.pdb
+D:\C#\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe.config
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.exe
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.pdb
+D:\C#\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe
+D:\C#\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.pdb
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Form1.resources
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Properties.Resources.resources
+D:\C#\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
+D:\C#\vkGroupWall\vkGroupWall\bin\Debug\Antigate.dll
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe.config
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.exe
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\bin\Debug\vkGroupWall.pdb
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Form1.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.InputCaptchaForm.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.Properties.Resources.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.exe
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.pdb
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+D:\Git\vkGroupWall\bin\Debug\vkGroupWall.exe.config
+D:\Git\vkGroupWall\bin\Debug\vkGroupWall.exe
+D:\Git\vkGroupWall\bin\Debug\vkGroupWall.pdb
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.Form1.resources
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.InputCaptchaForm.resources
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.Properties.Resources.resources
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.exe
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.pdb
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupWall\vkGroupWall\obj\Debug\vkGroupWall.AddProxyForm.resources
+D:\Git\vkGroupWall\obj\Debug\vkGroupWall.AddProxyForm.resources
+D:\Git\vkGroupLite\bin\Debug\vkGroupWall.exe.config
+D:\Git\vkGroupLite\bin\Debug\vkGroupWall.exe
+D:\Git\vkGroupLite\bin\Debug\vkGroupWall.pdb
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.Form1.resources
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.InputCaptchaForm.resources
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.Properties.Resources.resources
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.exe
+D:\Git\vkGroupLite\obj\Debug\vkGroupWall.pdb
