@@ -49,3 +49,13 @@ D:\Git\vkGroupLite\obj\Debug\vkGroupWall.Properties.Resources.resources
 D:\Git\vkGroupLite\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache
 D:\Git\vkGroupLite\obj\Debug\vkGroupWall.exe
 D:\Git\vkGroupLite\obj\Debug\vkGroupWall.pdb
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\bin\Debug\vkGroupWall.exe.config
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.exe
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.pdb
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\bin\Debug\vkGroupWall.exe
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\bin\Debug\vkGroupWall.pdb
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.csprojResolveAssemblyReference.cache
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.Form1.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.InputCaptchaForm.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.Properties.Resources.resources
+C:\Users\s.o.kravchenko\Documents\GitHub\vkGroupLite\obj\Debug\vkGroupWall.csproj.GenerateResource.Cache

@@ -24,6 +24,7 @@ namespace vkGroupWall
         Net http = new Net(); //Создаем объект
         string html = "";
         string log = "Список групп и статус сообщения:";
+        public Control[] controls;
 
         public void loginBtn_Click(object sender, EventArgs e)
         {
@@ -35,46 +36,28 @@ namespace vkGroupWall
 
         public void loginFunc(string login, string pass, string proxys)
         {
-            loginBtn.BeginInvoke((Action)delegate
-            {
-                loginBtn.BackColor = Color.WhiteSmoke;
-                loginBtn.Enabled = false;
-            });
+            controls = new Control[] {loginBtn};
+            ChangeStatus.notActivStatus(controls);
 
             int status = vkLogin.Login(login, pass, html, http, proxys); //Login
 
             if (status == 1) // валидный акк
             {
-                panel1.BeginInvoke((Action)delegate
-                {
-                     loginBtn.Enabled = false;
-                     loginBtn.BackColor = Color.WhiteSmoke;
-                     loadFromFile_btn.BackColor = Color.DarkGray;
-                     loadFromFile_btn.Enabled = true;
-                     logout_btn.Enabled = true;
-                     logout_btn.BackColor = Color.DarkGray;
-                     loginTextBox.Enabled = false;
-                     passTextBox.Enabled = false;
-                     loadFromFile_btn.Enabled = true;
-                     loadFromFile_btn.BackColor = Color.DarkGray;
-                     waitFrom_tb.Enabled = true;
-                     waitTo_tb.Enabled = true;
-                     messageTB.Enabled = true;
-                     postBtn.Enabled = true;
-                     postBtn.BackColor = Color.DarkGray;
-                     recurs_check.Enabled = true;
-                 });
+                controls = new Control[] {loadFromFile_btn, logout_btn, postBtn, waitFrom_tb, waitTo_tb, messageTB, recurs_check};
+                ChangeStatus.activStatus(controls);
+
+                controls = new Control[] {loginBtn, loginTextBox, passTextBox};
+                ChangeStatus.notActivStatus(controls);
+
                 MessageBox.Show("Аккаунт валидный");
              }
              else
              {
                 MessageBox.Show("Неверный пароль или аккаунт заблокирован");
 
-                loginBtn.BeginInvoke((Action)delegate
-                {
-                    loginBtn.BackColor = Color.DarkGray;
-                    loginBtn.Enabled = true;
-                });
+                controls = new Control[] { loginBtn };
+                ChangeStatus.activStatus(controls);
+
             }
         }
         
@@ -106,13 +89,13 @@ namespace vkGroupWall
             log = "";
 
             MessageBox.Show("Все сообщения были отправлены");
-            panel1.BeginInvoke((Action)delegate
-            {
-                panel1.Enabled = true;
-                recurs_check.Enabled = true;
-                recurs_stop_btn.Enabled = false;
-                recurs_stop_btn.BackColor = Color.WhiteSmoke;
-            });
+
+            controls = new Control[] { panel1, recurs_check };
+            ChangeStatus.activStatus(controls);
+
+            controls = new Control[] { recurs_stop_btn };
+            ChangeStatus.notActivStatus(controls);
+
         }
 
         public void mainSenderMethod(StreamWriter sw, string log, bool inputCaptchaType)
@@ -189,15 +172,12 @@ namespace vkGroupWall
 
         public void sendMessages()
         {
-            panel1.Enabled = false;
-            recurs_check.Enabled = false;
+            controls = new Control[] { recurs_stop_btn };
+            ChangeStatus.activStatus(controls);
 
-            recurs_stop_btn.Invoke(new Action(() =>
-            {
-                recurs_stop_btn.Enabled = true;
-                recurs_stop_btn.BackColor = Color.DarkGray;
-            }));
-
+            controls = new Control[] { panel1, recurs_check };
+            ChangeStatus.notActivStatus(controls);
+        
             Thread tr = new Thread(postWall);
             tr.IsBackground = true;
             tr.Start();
@@ -220,16 +200,17 @@ namespace vkGroupWall
 
             if (LoadList.groups.Count > 0)
             {
-                clean_btn.Enabled = true;
-                clean_btn.BackColor = Color.DarkGray;
+                controls = new Control[] { clean_btn };
+                ChangeStatus.activStatus(controls);
             }
         }
 
         private void clean_btn_Click(object sender, EventArgs e)
         {
             groupList.Items.Clear();
-            clean_btn.Enabled = false;
-            clean_btn.BackColor = Color.WhiteSmoke;
+            
+            controls = new Control[] { clean_btn };
+            ChangeStatus.notActivStatus(controls);
         }
 
         private void check_balance_btn_Click(object sender, EventArgs e)
@@ -261,45 +242,32 @@ namespace vkGroupWall
         {
             if (captcha_manual.Checked == true)
             {
-                antigateKey_TB.Enabled = false;
-                check_balance_btn.Enabled = false;
-                check_balance_btn.BackColor = Color.WhiteSmoke;
+                controls = new Control[] { antigateKey_TB, check_balance_btn };
+                ChangeStatus.notActivStatus(controls);
             }
             else
             {
-                antigateKey_TB.Enabled = true;
-                check_balance_btn.Enabled = true;
-                check_balance_btn.BackColor = Color.DarkGray;
+                controls = new Control[] { antigateKey_TB, check_balance_btn };
+                ChangeStatus.activStatus(controls);
             }
         }
 
         private void logout_btn_Click(object sender, EventArgs e)
         {
-                loginTextBox.Enabled = true;
-                passTextBox.Enabled = true;
-                loginBtn.Enabled = true;
-                loginBtn.BackColor = Color.DarkGray;
-                logout_btn.Enabled = false;
-                logout_btn.BackColor = Color.WhiteSmoke;
-                loadFromFile_btn.Enabled = false;
-                loadFromFile_btn.BackColor = Color.WhiteSmoke;
-                clean_btn.Enabled = false;
-                clean_btn.BackColor = Color.WhiteSmoke;
-                messageTB.Enabled = false;
-                postBtn.Enabled = false;
-                postBtn.BackColor = Color.WhiteSmoke;
-                waitFrom_tb.Enabled = false;
-                waitTo_tb.Enabled = false;
+            controls = new Control[] { loginTextBox, passTextBox, loginBtn };
+            ChangeStatus.activStatus(controls);
+
+            controls = new Control[] { logout_btn, loadFromFile_btn, clean_btn, messageTB, postBtn, waitFrom_tb, waitTo_tb, recurs_check };
+            ChangeStatus.notActivStatus(controls);
         }
         
         private void recurs_stop_btn_Click(object sender, EventArgs e)
         {
+            controls = new Control[] { recurs_check, recurs_stop_btn };
+            ChangeStatus.notActivStatus(controls);
+
             recurs_check.Checked = false;
-            recurs_stop_btn.Enabled = false;
-            recurs_stop_btn.BackColor = Color.WhiteSmoke;
             MessageBox.Show("Ожидаем отправку последнего сообщения");
-            //panel1.Enabled = true;
-            //recurs_check.Enabled = true;
         }
 
     }
